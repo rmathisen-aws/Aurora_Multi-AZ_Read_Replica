@@ -13,6 +13,7 @@ yum install mysql -y \
 Security Group - enable SSH \
 Create a Key Pair\
 \
+\
 **2) Create a Security Group allowing Inbound traffic on Port 3306 (MySQL/Aurora).** <br/>
 Create a Security Group which allows Inbound traffic on Port 3306 (MySQL/Aurora) from Custom source 0.0.0.0/0 \
 
