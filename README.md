@@ -16,7 +16,8 @@ Create a Key Pair\
 **2) Create a Security Group for the Aurora database.** <br/>
 Create a Security Group which allows Inbound traffic on Port 3306 (MySQL/Aurora) from Custom source 0.0.0.0/0 \
 \
-**3) Create Aurora database with replication and Multi-AZ deployment and attach the created Security Group to the VPC.** <br/>
+**3) Create Aurora database with replication and Multi-AZ deployment** <br/> 
+&nbsp;&nbsp;&nbsp;&nbsp;**and attach the created Security Group to the VPC.** <br/>
 Create an db.t2.small Aurora Database with Single-master Replication and Multi-AZ deployment on the default VPC, <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;and assign it the Security Group created in Step 2. \
 Keep note of the Username & Password as you will need it in Steps 5 & 6! <br/>
