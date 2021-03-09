@@ -13,7 +13,7 @@ yum install mysql -y \
 Security Group - enable SSH \
 Create a Key Pair\
 \
-**2) Create a Security Group allowing Inbound traffic on Port 3306 (MySQL/Aurora).** <br/>
+**2) Create a Security Group for the Aurora database.** <br/>
 Create a Security Group which allows Inbound traffic on Port 3306 (MySQL/Aurora) from Custom source 0.0.0.0/0 \
 \
 **3) Create Aurora database with replication and Multi-AZ deployment and attach the created Security Group to the VPC.** <br/>
@@ -35,7 +35,7 @@ Log into the RDS Instance using the syntax mysql -h (Hostname) -u (username) -p 
   Use a SELECT statement to view the records in the table. \
   To exit, type exit. <br/>
 \
-**6) Force a Failover on the Writer (Master) cluster. <br/>**
+**6) Force a Failover on the Writer (Master) cluster and test the new Writer cluster. <br/>**
 Force a Failover on the Master cluster. If Multi-AZ is working properly, the Read Replica will be promoted to the new Master. This Failover may take a few min, but the Master will become the Reader, and the Reader will become the Master. Keep an eye on the DB Identifier to notice this change! \
 Once this change occurs, test the new Master by confirming whether or not the records are in the database. \
 Copy the Endpoint of the new Master, and log in, just like we did in Step 5. \
