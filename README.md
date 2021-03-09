@@ -1,17 +1,18 @@
 **Title:** Aurora Multi-AZ & Read Replica\
 **Name:** Robert Mathisen\
-**Date:** 3/9/2021
+**Date:** 3/9/2021 \
 \
 \
 **Procedure:** <br/>
+\
 **1) Create an EC2 Instance and install MySQL using a bootstrap script.** <br/>
 Create a t2.micro EC2 Instance using the Linux 2 AMI. \
 Enter the following script into the User Data to install MySQL: \
 #!/bin/bash -ex \
 yum install mysql -y \
 Security Group - enable SSH \
-Create a Key Pair
-
+Create a Key Pair\
+\
 **2) Create a Security Group allowing Inbound traffic on Port 3306 (MySQL/Aurora).** <br/>
 Create a Security Group which allows Inbound traffic on Port 3306 (MySQL/Aurora) from Custom source 0.0.0.0/0 \
 
