@@ -1,6 +1,6 @@
 **Title:** Aurora Multi-AZ & Read Replica\
 **Name:** Robert Mathisen\
-**Date:** 3/9/2021 \
+**Date:** 3/9/2021
 \
 \
 **Procedure:** <br/>
