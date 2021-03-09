@@ -8,7 +8,7 @@
 **1) Create an EC2 Instance and install MySQL using a bootstrap script.** <br/>
 Create a t2.micro EC2 Instance using the Linux 2 AMI. \
 Enter the following script into the User Data to install MySQL: \
-*#!/bin/bash -ex* \
+&nbsp;&nbsp;&nbsp;&nbsp;*#!/bin/bash -ex* \
 *yum install mysql -y* \
 Security Group - enable SSH \
 Create a Key Pair\
