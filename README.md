@@ -28,16 +28,18 @@ In the Security Group of the Writer (Master) cluster, change the Source IP addre
 **5) SSH into the Aurora database and create a table with a few records.** <br/>
 SSH into the RDS EC2 Instance using the Public IPv4 & Key Pair created in Step 1. \
 Switch to the Root User: *sudo -s* \
+\
 Log into the RDS Instance: *mysql -h (Hostname) -u (username) -p* \
 &nbsp;&nbsp;&nbsp;&nbsp;The Hostname is the Endpoint of the Writer (Master) Cluster. <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;Use the Username that was created when creating the Aurora Database in Step 3. <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;Then, you will be prompted for the password. \
-  List all Databases: *show databases;* \
-  Create a database: *Create database aurora_db;* \
-  To use this db: *use aurora_db;* \
-  Create a table and insert rows (records) into this table. \
-  Use a SELECT statement to view the records in the table. \
-  To exit, type exit. <br/>
+\
+List all Databases: *show databases;* \
+Create a database: *Create database aurora_db;* \
+To use this db: *use aurora_db;* \
+Create a table and insert rows (records) into this table. \
+Use a SELECT statement to view the records in the table. \
+To exit: *exit* <br/>
 \
 **6) Force a Failover on the Writer (Master) cluster and test the new Writer cluster. <br/>**
 Force a Failover on the Master cluster. If Multi-AZ is working properly, the Read Replica will be promoted to the new Master. This Failover may take a few min, but the Master will become the Reader, and the Reader will become the Master. Keep an eye on the DB Identifier to notice this change! \
