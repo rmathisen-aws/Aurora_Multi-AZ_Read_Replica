@@ -9,7 +9,7 @@
 Create a t2.micro EC2 Instance using the Linux 2 AMI. \
 Enter the following script into the User Data to install MySQL: \
 &nbsp;&nbsp;&nbsp;&nbsp;*#!/bin/bash -ex* \
-*yum install mysql -y* \
+&nbsp;&nbsp;&nbsp;&nbsp;*yum install mysql -y* \
 Security Group - enable SSH \
 Create a Key Pair\
 \
@@ -17,11 +17,13 @@ Create a Key Pair\
 Create a Security Group which allows Inbound traffic on Port 3306 (MySQL/Aurora) from Custom source 0.0.0.0/0 \
 \
 **3) Create Aurora database with replication and Multi-AZ deployment and attach the created Security Group to the VPC.** <br/>
-Create an db.t2.small Aurora Database with Single-master Replication and Multi-AZ deployment on the default VPC, and assign it the Security Group created in Step 2. \
+Create an db.t2.small Aurora Database with Single-master Replication and Multi-AZ deployment on the default VPC, <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;and assign it the Security Group created in Step 2. \
 Keep note of the Username & Password as you will need it in Steps 5 & 6! <br/>
 \
 **4) Connect the EC2 Instance to the Aurora database.** <br/>
-In the Security Group of the Writer (Master) cluster, change the Source IP address of your from 0.0.0.0/0 to the Private IPv4 of your RDS EC2 Instance with a prefix length of /32 (ex: 172.31.81.193/32) <br/>
+In the Security Group of the Writer (Master) cluster, change the Source IP address of your from 0.0.0.0/0 <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;to the Private IPv4 of your RDS EC2 Instance with a prefix length of /32 &nbsp;&nbsp;&nbsp;&nbsp; (ex: 172.31.81.193/32) <br/>
 \
 **5) SSH into the Aurora database and create a table with a few records.** <br/>
 SSH into the RDS EC2 Instance using the Public IPv4 & Key Pair created in Step 1. \
