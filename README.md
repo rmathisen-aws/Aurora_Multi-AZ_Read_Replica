@@ -44,7 +44,7 @@ Log into the RDS Instance using the syntax mysql -h (Hostname) -u (username) -p 
 show databases; \
 use aurora_db; \
 show tables; \
-select * from (tablename);
+select * from (tablename); <br/>
 \
 **7) Clean up!! (~5 min)** \
 Terminate RDS EC2 Instance \
