@@ -43,7 +43,7 @@ To exit: *exit* <br/>
 \
 **6) Force a Failover on the Writer (Master) cluster and test the new Writer cluster. <br/>**
 Force a Failover on the Master cluster. <br/>
-&nbsp;&nbsp;&nbsp;&nbsp; If Multi-AZ is working properly, the Read Replica will be promoted to the new Master. <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;If Multi-AZ is working properly, the Read Replica will be promoted to the new Master. <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;This Failover may take a few min, but the Master will become the Reader, and the Reader will become the Master. <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;Keep an eye on the DB Identifier to notice this change! \
 Once this change occurs, test the new Master by confirming whether or not the records are in the database. \
