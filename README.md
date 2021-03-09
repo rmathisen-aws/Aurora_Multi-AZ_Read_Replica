@@ -48,4 +48,4 @@ select * from (tablename); <br/>
 **7) Clean up!! (~5 min)** \
 Terminate RDS EC2 Instance \
 Delete the Reader cluster \
-Delete the Writer cluster. To do this, select whether or not you want to create a final snapshot, acknowledge and confirm the deletion.
+Delete the Writer cluster. To do this, select whether or not you want to create a final snapshot, acknowledge, and confirm the deletion.
