@@ -42,7 +42,10 @@ Use a SELECT statement to view the records in the table. \
 To exit: *exit* <br/>
 \
 **6) Force a Failover on the Writer (Master) cluster and test the new Writer cluster. <br/>**
-Force a Failover on the Master cluster. If Multi-AZ is working properly, the Read Replica will be promoted to the new Master. This Failover may take a few min, but the Master will become the Reader, and the Reader will become the Master. Keep an eye on the DB Identifier to notice this change! \
+Force a Failover on the Master cluster. <br/>
+&nbsp;&nbsp;&nbsp;&nbsp; If Multi-AZ is working properly, the Read Replica will be promoted to the new Master. <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;This Failover may take a few min, but the Master will become the Reader, and the Reader will become the Master. <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Keep an eye on the DB Identifier to notice this change! \
 Once this change occurs, test the new Master by confirming whether or not the records are in the database. \
 Copy the Endpoint of the new Master, and log in, just like we did in Step 5. \
 Log into the RDS Instance using the syntax mysql -h (Hostname) -u (username) -p (Make sure you use the new Hostname!!) \
