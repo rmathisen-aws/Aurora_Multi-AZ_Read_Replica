@@ -49,11 +49,12 @@ Force a Failover on the Master cluster. <br/>
 \
 Once this change occurs, test the new Master by confirming whether or not the records are in the database. \
 &nbsp;&nbsp;&nbsp;&nbsp;Copy the Endpoint of the new Master, and log in, just like we did in Step 5. \
-&nbsp;&nbsp;&nbsp;&nbsp;Log into the RDS Instance using the syntax mysql -h (Hostname) -u (username) -p (Make sure you use the new Hostname!!) \
-&nbsp;&nbsp;&nbsp;&nbsp;show databases; \
-&nbsp;&nbsp;&nbsp;&nbsp;use aurora_db; \
-&nbsp;&nbsp;&nbsp;&nbsp;show tables; \
-&nbsp;&nbsp;&nbsp;&nbsp;select * from (tablename); <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Log into the RDS Instance using the syntax mysql -h (Hostname) -u (username) -p \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Make sure you use the new Hostname!!) \
+&nbsp;&nbsp;&nbsp;&nbsp;*show databases;* \
+&nbsp;&nbsp;&nbsp;&nbsp;*use aurora_db;* \
+&nbsp;&nbsp;&nbsp;&nbsp;*show tables;* \
+&nbsp;&nbsp;&nbsp;&nbsp;*select * from (tablename);* <br/>
 \
 **7) Clean up!! (~5 min)** \
 Terminate RDS EC2 Instance \
