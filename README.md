@@ -3,7 +3,7 @@
 **Date:** 3/9/2021\
 \
 \
-**Procedure:**
+**Procedure:** <br\>
 **1) Create an EC2 Instance and install MySQL using a bootstrap script.** <br/>
 Create a t2.micro EC2 Instance using the Linux 2 AMI. \
 Enter the following script into the User Data to install MySQL: \
