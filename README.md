@@ -39,8 +39,11 @@ List all Databases: *show databases;* \
 Create a database: *Create database aurora_db;* \
 To use this db: *use aurora_db;* \
 Create a Table: *CREATE TABLE (tablename) (* \
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *field_id* &nbsp;&nbsp;&nbsp;&nbsp; *INT* &nbsp;&nbsp;&nbsp;&nbsp;*AUTO_INCREMENT,* \
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *field_name* &nbsp;&nbsp;&nbsp;&nbsp; *VARCHAR(255)* &nbsp;&nbsp;&nbsp;&nbsp; *NOT NULL,* \
+*field_id* &nbsp;&nbsp;&nbsp;&nbsp; *INT* &nbsp;&nbsp;&nbsp;&nbsp;*AUTO_INCREMENT,* \
+*field_name1* &nbsp;&nbsp;&nbsp;&nbsp; *VARCHAR(255)* &nbsp;&nbsp;&nbsp;&nbsp; *NOT NULL,* \
+*field_name2* &nbsp;&nbsp;&nbsp;&nbsp; *VARCHAR(255)* \
+*PRIMARY KEY (field_id));*
+
 insert rows (records) into this table. \
 Use a SELECT statement to view the records in the table. \
 To exit: *exit* <br/>
