@@ -31,7 +31,7 @@ In the Security Group of the Writer (Master) instance, change the Source IP addr
 SSH into the RDS EC2 Instance using the Public IPv4 & Key Pair created in Step 1. \
 Switch to the Root User: *sudo -s* \
 \
-Log into the RDS Instance: *mysql -h (Hostname) -u (username) -p* \
+Log into the RDS Instance: *mysql -h `<Hostname>` -u `<username>` -p* \
 &nbsp;&nbsp;&nbsp;&nbsp;The Hostname is the Endpoint of the Writer (Master) instance. <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;Use the Username that was created when creating the Aurora Database in Step 3. <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;Then, you will be prompted for the password. \
