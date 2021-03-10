@@ -38,7 +38,10 @@ Log into the RDS Instance: *mysql -h (Hostname) -u (username) -p* \
 List all Databases: *show databases;* \
 Create a database: *Create database aurora_db;* \
 To use this db: *use aurora_db;* \
-Create a table and insert rows (records) into this table. \
+Create a Table: *CREATE TABLE (tablename) (* \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *field_id INT AUTO_INCREMENT,* \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *field_name VARCHAR(255)* &nbsp;&nbsp;&nbsp;&nbsp; *NOT NULL,* \
+insert rows (records) into this table. \
 Use a SELECT statement to view the records in the table. \
 To exit: *exit* <br/>
 \
