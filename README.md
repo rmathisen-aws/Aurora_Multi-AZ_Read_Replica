@@ -45,7 +45,7 @@ Create a Table: *CREATE TABLE (tablename) (* \
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *PRIMARY KEY (field_id));*
 
 Insert Rows (Records) into this table: \
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *INSERT INTO (tablename)(field_name1,field_name2) VALUES('value1','value2');*
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *INSERT INTO (tablename)(field_name1, field_name2) VALUES ('value1', 'value2');*
 
 Use a SELECT statement to view the records in the table. \
 To exit: *exit* <br/>
