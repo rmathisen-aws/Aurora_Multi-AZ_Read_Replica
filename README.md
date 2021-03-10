@@ -14,6 +14,7 @@ Security Group - enable SSH \
 Create a Key Pair\
 \
 **2) Create a Security Group for the Aurora database.** <br/>
+Navigate to EC2 → Network & Security → Security Groups \
 Create a Security Group which allows Inbound traffic on Port 3306 (MySQL/Aurora) from Custom source 0.0.0.0/0 \
 \
 **3) Create Aurora database with replication and Multi-AZ deployment** <br/> 
