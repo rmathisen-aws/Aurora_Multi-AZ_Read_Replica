@@ -47,8 +47,10 @@ Create a Table: *CREATE TABLE (tablename) (* \
 Insert Rows (Records) into this table: \
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *INSERT INTO (tablename)(field_name1, field_name2) VALUES ('value1', 'value2');*
 
-Use a SELECT statement to view the records in the table. \
-To exit: *exit* <br/>
+Use a Select statement to view the records in the table: \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *SELECT * FROM (tablename);*
+
+To Exit: *exit* <br/>
 \
 **6) Force a Failover on the Writer (Master) instance and test the new Writer instance. <br/>**
 Force a Failover on the Master instance. <br/>
