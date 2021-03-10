@@ -23,7 +23,7 @@ Create an db.t2.small Aurora Database with Single-master Replication and Multi-A
 Keep note of the Username & Password as you will need it in Steps 5 & 6! <br/>
 \
 **4) Connect the EC2 Instance to the Aurora database.** <br/>
-In the Security Group of the Writer (Master) cluster, change the Source IP address of your from 0.0.0.0/0 <br/>
+In the Security Group of the Writer (Master) instance, change the Source IP address of your from 0.0.0.0/0 <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;to the Private IPv4 of your RDS EC2 Instance with a prefix length of /32 &nbsp;&nbsp;&nbsp;&nbsp; (ex: 172.31.81.193/32) <br/>
 \
 **5) SSH into the Aurora database and create a table with a few records.** <br/>
@@ -31,7 +31,7 @@ SSH into the RDS EC2 Instance using the Public IPv4 & Key Pair created in Step 1
 Switch to the Root User: *sudo -s* \
 \
 Log into the RDS Instance: *mysql -h (Hostname) -u (username) -p* \
-&nbsp;&nbsp;&nbsp;&nbsp;The Hostname is the Endpoint of the Writer (Master) Cluster. <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;The Hostname is the Endpoint of the Writer (Master) instance. <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;Use the Username that was created when creating the Aurora Database in Step 3. <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;Then, you will be prompted for the password. \
 \
@@ -42,8 +42,8 @@ Create a table and insert rows (records) into this table. \
 Use a SELECT statement to view the records in the table. \
 To exit: *exit* <br/>
 \
-**6) Force a Failover on the Writer (Master) cluster and test the new Writer cluster. <br/>**
-Force a Failover on the Master cluster. <br/>
+**6) Force a Failover on the Writer (Master) instance and test the new Writer instance. <br/>**
+Force a Failover on the Master instance. <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;If Multi-AZ is working properly, the Read Replica will be promoted to the new Master. <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;This Failover may take a few min, but the Master will become the Reader, and the Reader will become the Master. <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;Keep an eye on the DB Identifier to notice this change! <br/>
@@ -59,5 +59,5 @@ Once this change occurs, test the new Master by confirming whether or not the re
 \
 **7) Clean up!! (~5 min)** \
 Terminate RDS EC2 Instance \
-Delete the Reader cluster \
-Delete the Writer cluster. To do this, select whether or not you want to create a final snapshot, acknowledge, and confirm the deletion.
+Delete the Reader instance \
+Delete the Writer instance. To do this, select whether or not you want to create a final snapshot, acknowledge, and confirm the deletion.
