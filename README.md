@@ -58,6 +58,6 @@ Once this change occurs, test the new Master by confirming whether or not the re
 &nbsp;&nbsp;&nbsp;&nbsp;*select * from (tablename);* <br/>
 \
 **7) Clean up!! (~5 min)** \
-Terminate RDS EC2 Instance \
-Delete the Reader instance \
+Terminate EC2 instance. \
+Delete the Reader instance. \
 Delete the Writer instance. To do this, select whether or not you want to create a final snapshot, acknowledge, and confirm the deletion.
