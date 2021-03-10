@@ -3,8 +3,7 @@
 **Date:** 3/9/2021 \
 \
 **Summary:** \
-Created an Aurora database with replication and Multi-AZ deployment. \
-Forced a Failover on the Master instance, and confirmed the Read Replica is promoted to Master. \
+Created an Aurora database with replication and Multi-AZ deployment. Forced a Failover on the Master instance, and confirmed the Read Replica is promoted to Master. \
 <br/>
 
 **Process:** <br/>
