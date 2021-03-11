@@ -23,7 +23,8 @@ Create a Key Pair\
 Navigate to EC2 → Network & Security → Security Groups \
 Create a Security Group which allows Inbound traffic on Port 3306 (MySQL/Aurora) from Custom source 0.0.0.0/0 \
 \
-**3) Create Aurora database with replication and Multi-AZ deployment** <br/> 
+**3) Create Aurora database with replication and Multi-AZ deployment** <br/>
+RDS → Databases → Create database \
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**and attach the created Security Group to the VPC.** <br/>
 Create an db.t2.small Aurora Database with Single-master Replication and Multi-AZ deployment on the default VPC, <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;and assign it the Security Group created in Step 2. \
