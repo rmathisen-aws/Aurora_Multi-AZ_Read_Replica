@@ -6,7 +6,7 @@
 Created an Aurora database with replication and Multi-AZ deployment. Forced a Failover on the Master instance, and confirmed the Read Replica is promoted to Master. \
 <br/>
 **Reason & Reflection:** \
-Already having background knowledge on databases, I thought it would be interesting to learn about the process of configuring and launching an Aurora database. It was nice to be able to write some very familiar SQL statements in the CLI. But what I found to be the most interesting and rewarding is being able to implement a solution where I'm able to protect a client's data in the event of a failover. \
+Already having background knowledge on databases, I thought it would be interesting to learn about the process of configuring and launching an Aurora database. It was nice to be able to write some very familiar SQL statements in Linux. But what I found to be the most interesting and rewarding is being able to implement a solution where I'm able to protect a client's data in the event of a failover. \
 <br/>
 
 **Process:** <br/>
