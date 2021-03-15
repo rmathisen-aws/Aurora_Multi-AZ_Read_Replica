@@ -1,4 +1,4 @@
-**Title:** Aurora Multi-AZ & Read Replica\
+**Title:** Create an Aurora Database with Replication and Multi-AZ deployment\
 **Name:** Robert Mathisen\
 **Date:** 3/9/2021 \
 \
